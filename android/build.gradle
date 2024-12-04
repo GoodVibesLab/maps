@@ -36,11 +36,12 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
+    namespace 'com.mapbox.mapboxgl'
+    compileSdkVersion 34
     ndkVersion "20.1.5948944"
 
     defaultConfig {
-        minSdkVersion 20
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
